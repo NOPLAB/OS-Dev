@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  os-dev:
+    image: debian
+    volumes:
+      - type: bind
+        source: "."
+        target: "/workspace"
+    tty: true
