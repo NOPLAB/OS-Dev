@@ -1,4 +1,4 @@
-FROM debian:11
+FROM --platform=linux/amd64 debian:11
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     qemu ovmf gcc make nasm \
